@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+    <html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    
+        <div class="row" style="background-color: white;margin-right:0px;height:100%;padding:0px;background-color: none" >
+        <div style="padding:0px">
+                <!-- Sidebar -->
+                <div id="mySidebar" class="sidebar">
+                    
+                    <nav id="sidebar" style="height: 100%">
+                        <div class="sidebar-header">
+                          <span style="margin-left: 30px;font-weight:bold;font-size:25px;margin-top: 5px"><img src="nerdware.png" style="height: 60px;max-width: 60px;margin-left: 0px;margin-right: 10px;margin-top: 10;border-radius: 10px" class="card-img-top " alt="...">NerdWare</span>
+                        </div>
+                
+                        <ul class="list-unstyled components">
+    
+                            <i style="font-size:24px;margin-right: 30px;margin-left: 10px" class="fa">&#xf0e4;</i>Dashboard
+                            <li  style="margin-top: 5px">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <i style="font-size:24px;margin-right: 35px" class="fa">&#xf015;</i>Home</a>
+                                </a>
+                                
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li>
+                                        <a href="#">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i style="font-size:24px;margin-right: 35px" class="fa">&#xf05a;</i>
+                                    About</a>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <i style="font-size:24px;margin-right: 35px" class="fa">&#xf0c5;</i>Pages</a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li>
+                                        <a href="#">Page 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                <i style="font-size:24px;margin-right: 30px" class="fa">&#xf095;</i>
+                                <span style="margin-left:5px">Contact</a></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <i style="font-size:24px;margin-right: 30px" class="fa">&#xf007;</i>
+                                   <span style="margin-left:5px">Profile</a></span>
+                                </a>
+                          </li>
+                          
+                        <li>
+                          <a href="#">
+                              <i style="font-size:24px;margin-right: 30px" class="fa">&#xf0f3;</i>Notifications</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i style="font-size:24px;margin-right: 35px" class="fa">&#xf062;</i>Upgrade</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                          <i style="font-size:24px;margin-right: 35px" class="fa">&#xf013;</i>Settings</a>
+                       
+                  </li>
+                        </ul>
+                    </nav>
+                  </div>
+                 
+               
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                      <!-- Image and text -->
+              <nav class="navbar   row " style="margin-bottom:5px;margin-top: 0px;height: 50px;;position:relative;background-color: #38B0DE;padding:0px">
+                  <a class="navbar-brand" href="#">
+                      <div id="main">
+                          <button style="height: 20px;width:30px;outline: none;color:white;background-color: transparent;" class="openbtn" onclick="open_close()">☰</button>   
+                        
+                   <span style="outline:none;font-size:20px;margin-left:0px;color:white;"> Dashboard </span></div> 
+                  </a>
+                
+                </nav>
+                        <div class="card-group" style="margin-left:25px;margin-top:0px ;height: 200px;">
+                                <div class="card row col-lg-4 col-sm-12" style="height: 180px;border-right:4px solid #6276a7;outline: none">
+                                  
+                                  <div class="card-body alert-primary" style="border-left:12px solid #B0B0B0">
+                                      <span style="margin-left: 0px"> <h5 class="card-title">Capacity</h5></span> 
+                                        <span style="margin-left: 0px"> <i class="fa fa-database" style="font-size:48px;color:darksalmon"></i></span>
+                                  </div>
+                                  <div class="card-footer" style="border-left:12px solid #B0B0B0;border-bottom-left-radius: 25px">
+                                    <small class="text-muted">
+                                      <span><i style="font-size:12px;margin-right: 5px" class="fa">&#xf021;</i>Last updated 3 mins ago</small></span>
+
+                                  </div>
+                                </div>
+                                <div class="card row col-lg-4 "style="height: 180px;border: none;outline: none">
+                                  
+                                  <div class="card-body alert-danger" style="border-left:12px solid #B0B0B0">
+                                   <span style="margin-left: 0px"> <h5 class="card-title">Revenue</h5></span>
+                                   <span style="margin-left: 0px"><i class="fa fa-line-chart" style="font-size:48px;color:rgb(148, 25, 25)"></i></span>
+                                    
+                                  </div>
+                                  <div class="card-footer " style="border-left:12px solid #B0B0B0;border-bottom-left-radius: 25px">
+                                    <small class="text-muted">
+                                      <span style="margin-left: 0px"><i style="font-size:15px;margin-right: 5px" class="fa">&#xf1da;</i>
+                                        Updated Now</small>
+                                      </span>
+                                  </div>
+                                </div>
+                                <div class="card row col-lg-4 "style="height: 180px;border: none;outline: none">
+                                 
+                                  <div class="card-body alert-warning" style="border-left:12px solid #B0B0B0;">
+                                      <span style="margin-left: 0px">  <h5 class="card-title">Errors</h5></span>
+               
+                                        <span style="margin-left: 0px"> <img src="error.png" style="height: 50px;max-width: 70px;border-radius: 50px;" class="card-img-top " alt="..."></span>
+                                  </div>
+                                  <div class="card-footer" style="border-left:12px solid #B0B0B0;border-bottom-left-radius: 25px">
+                                    <span><small class="text-muted">
+                                        <i style="font-size:15px;margin-right:5px" class="fa">&#xf017;</i>One week ago</small></span>
+                                  </div>
+                                  
+                                    </div>
+                                    <div class="card row col-lg-4"style="height: 180px;border: none;outline: none">
+                                      
+                                      <div class="card-body alert-success" style="border-left:12px solid #B0B0B0;">
+                                          <span style="margin-left: 0px">  <h5 class="card-title">Followers</h5></span>
+                                            <span style="margin-left: 0px"> <i class="fa fa-twitter" style="font-size:48px;color:tomato"></i></span>
+                                      </div>
+                                      <div class="card-footer" style="border-left:12px solid #B0B0B0;border-bottom-left-radius: 25px;">
+                                        <small class="text-muted">
+                                            <i class="material-icons" style="margin-left: 5px">&#xe5d5;</i>
+                                            Last Day</small>
+                                      </div>
+                                    </div>
+                                      
+                  </div>
+                                
+                               
+                              </div>
+                </div>
+              <div class="row  " style="padding:10px;margin-left: auto;margin-right: auto">
+               
+                <div class="col-lg-6 col-md-6 d-none d-md-block" style="margin-right:10px;margin-top: 0px;margin-left: 0px ; background-color: #f1f1f1;border:2px solid rgb(110, 99, 99) ">
+                    
+                  <span style="font-size: 25px">Earnings Review</span>
+                  <div id="tabs" style="height: 100px">
+                      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                      </div>
+                      
+                    </div>
+                    
+                 
+                    <div class=" row col-lg-6 col-md-6 col-sm-12 d-none d-md-block" style="border:2px solid grey;height: 350px;background-color: rgb(252, 247, 230);width:300px">
+                        <span style="font-size: 25px">Revenue Resources</span>
+                        <div id="chartdiv" style="margin-top: 0px;height:300px">
+                           
+                          </div>
+                        </div>
+                      
+                                            </div>
+                                          
+                    
+            </div>
+          </div>
+            
+            
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script>
+          document.getElementById("myBtn").addEventListener("singleclick", open_close);
+
+var menuState = 0 // close
+function open_close() {
+  if(menuState === 0){
+     menuState = 1;
+     document.getElementById("mySidebar").style.width = "230px";
+          document.getElementById("main").style.marginLeft = "230px";
+  }
+  else {
+     menuState = 0;
+     document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+  }
+ 
+}
+
+        </script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+       
+       
+          
+          <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+          <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+
+<script>
+    window.onload = function () {
+    
+    // Construct options first and then pass it as a parameter
+    var options1 = {
+      animationEnabled: true,
+      
+      data: [{
+        type: "column", //change it to line, area, bar, pie, etc
+        legendText: "Try Resizing with the handle to the bottom right",
+        showInLegend: true,
+        dataPoints: [
+          { y: 10 },
+          { y: 6 },
+          { y: 14 },
+          { y: 12 },
+          { y: 19 },
+          { y: 14 },
+          { y: 26 },
+          { y: 10 },
+          { y: 22 }
+          ]
+        }]
+    };
+    
+    $("#resizable").resizable({
+      create: function (event, ui) {
+        //Create chart.
+        $("#chartContainer1").CanvasJSChart(options1);
+      },
+      resize: function (event, ui) {
+        //Update chart size according to its container size.
+        $("#chartContainer1").CanvasJSChart().render();
+      }
+    });
+    
+    }
+    </script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    
+    <!-- Chart code -->
+    <script>
+    am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create chart instance
+    var chart = am4core.create("chartdiv", am4charts.PieChart);
+    
+    // Add data
+    chart.data = [ {
+      
+    }, {
+     
+    }, {
+     
+    }, {
+      
+    }, {
+      
+    }, {
+      "country": "Austria",
+      "litres": 18.3
+    }, {
+      "country": "UK",
+      "litres": 99
+    }, {
+      "country": "Belgium",
+      "litres": 60
+    }, {
+      "country": "Austria",
+      "litres": 50
+    } ];
+    
+    // Set inner radius
+    chart.innerRadius = am4core.percent(50);
+    
+    // Add and configure Series
+    var pieSeries = chart.series.push(new am4charts.PieSeries());
+    pieSeries.dataFields.value = "litres";
+    pieSeries.dataFields.category = "country";
+    pieSeries.slices.template.stroke = am4core.color("#fff");
+    pieSeries.slices.template.strokeWidth = 2;
+    pieSeries.slices.template.strokeOpacity = 1;
+    
+    // This creates initial animation
+    pieSeries.hiddenState.properties.opacity = 1;
+    pieSeries.hiddenState.properties.endAngle = -90;
+    pieSeries.hiddenState.properties.startAngle = -90;
+    
+    }); // end am4core.ready()
+    </script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>
+    window.onload = function () {
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      exportEnabled: true,
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title:{
+        text: ""
+      },
+      data: [{
+        type: "column", //change type to bar, line, area, pie, etc
+        //indexLabel: "{y}", //Shows y value on all Data Points
+        indexLabelFontColor: "#5A5757",
+        indexLabelPlacement: "outside",
+        dataPoints: [
+          { x: 10, y: 71 },
+          { x: 20, y: 55 },
+          { x: 30, y: 50 },
+          { x: 40, y: 65 },
+          { x: 50, y: 92, indexLabel: "Highest" },
+          { x: 60, y: 68 },
+          { x: 70, y: 38 },
+          { x: 80, y: 71 },
+          { x: 90, y: 54 },
+          { x: 100, y: 60 },
+          { x: 110, y: 36 },
+          { x: 120, y: 49 },
+          { x: 130, y: 21, indexLabel: "Lowest" }
+        ]
+      }]
+    });
+    chart.render();
+    
+    }
+    </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
